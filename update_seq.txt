@@ -1,6 +1,9 @@
 Host:
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
+
+make dtbs
+
 make -j4 zImage
 scp arch/arm/boot/zImage root@192.168.1.122:/media/boot/kernel7.img
 
