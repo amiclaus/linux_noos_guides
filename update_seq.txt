@@ -2,6 +2,7 @@ Host:
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
 
+make adi_bcm2709_defconfig (2711 - rpi4)
 make dtbs
 
 make -j4 zImage
