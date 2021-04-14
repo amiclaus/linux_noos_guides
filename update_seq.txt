@@ -15,3 +15,11 @@ ls -l /media/boot
 
 checkpatch:
 scripts/checkpatch.pl --git HEAD --ignore FILE_PATH_CHANGES --ignore LONG_LINE --ignore LONG_LINE_STRING --ignore LONG_LINE_COMMENT
+
+dt-bindings:
+pip3 install git+https://github.com/devicetree-org/dt-schema.git@master
+export PATH=$PATH:/home/amiclaus/.local/bin
+sudo apt-get install libyaml-dev
+make dtbs_check DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/amplifiers/adi,ada4250.yaml
+OR
+make dt_bindings_check
