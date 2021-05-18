@@ -6,7 +6,8 @@ make adi_bcm2709_defconfig (2711 - rpi4)
 make dtbs
 
 make -j4 zImage
-scp arch/arm/boot/zImage root@192.168.1.122:/media/boot/kernel7.img
+scp arch/arm/boot/zImage root@192.168.1.122:/boot/kernel7.img
+scp arch/arm/boot/dts/overlays/rpi-admv1014.dtbo  root@10.48.65.139:/boot/overlays
 
 Rpi:
 ifconfig
