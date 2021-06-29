@@ -7,5 +7,8 @@ git format-patch HEAD~1
 mv 0001-regmap-add-support-for-7-17-register-formating.patch ../torvalds_linux/
 cd ../torvalds_linux/
 git am 0001-regmap-add-support-for-7-17-register-formating.patch
+
+git format-patch --cover-letter HEAD~2 -o iio-adrf6780
+
 ./scripts/get_maintainer.pl 0001-regmap-add-support-for-7-17-register-formating.patch
 git send-email --cc-cmd='./scripts/get_maintainer.pl --norolestats 000*' 0001-regmap-add-support-for-7-17-register-formating.patch
