@@ -1,1 +1,2 @@
 nmap -sn 10.42.0.1/24
+make -j4 zImage modules dtbs
