@@ -1,3 +1,5 @@
 nmap -sn 10.42.0.1/24
 make -j4 zImage modules dtbs
 sudo make modules_install INSTALL_MOD_PATH=/media/amiclaus/rootfs/
+
+cd /sys/module/g_ether/parameters
