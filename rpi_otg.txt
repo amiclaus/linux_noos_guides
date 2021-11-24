@@ -3,3 +3,7 @@ make -j4 zImage modules dtbs
 sudo make modules_install INSTALL_MOD_PATH=/media/amiclaus/rootfs/
 
 cd /sys/module/g_ether/parameters
+
+/lib/systemd/system/iiod.service
+
+systemctl status iiod.service
