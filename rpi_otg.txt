@@ -9,3 +9,5 @@ cd /sys/module/g_ether/parameters
 systemctl status iiod.service
 
 umount /sys/kernel/config/
+
+/usr/sbin/iiod_setup_gadgetfs
