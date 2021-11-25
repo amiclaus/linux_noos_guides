@@ -7,3 +7,5 @@ cd /sys/module/g_ether/parameters
 /lib/systemd/system/iiod.service
 
 systemctl status iiod.service
+
+umount /sys/kernel/config/
