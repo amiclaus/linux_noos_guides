@@ -31,3 +31,7 @@ make DT_CHECKER_FLAGS=-m DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/f
 
 copy image:
 sudo dd if=/dev/sde of=/dev/sdf bs=4M status=progress
+
+lsblk
+sudo fdisk -l /dev/sde
+sudo dd if=/dev/sdf of=/media/amiclaus/799D2070502D4D79/adrv9009zu11eg_fmcbridge_prod_test_2022.img bs=512 count=22618130 status=progress
