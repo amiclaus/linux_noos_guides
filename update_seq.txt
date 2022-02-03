@@ -29,3 +29,5 @@ make dt_bindings_check
 With flags:
 make DT_CHECKER_FLAGS=-m DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/frequency/adi,adrf6780.yaml dt_binding_check
 
+copy image:
+sudo dd if=/dev/sde of=/dev/sdf bs=4M status=progress
