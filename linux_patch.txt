@@ -1,4 +1,4 @@
-git config --global sendemail.smtpencryption tls
+git config --global sendemail.smtp-encryption tls
 git config --global sendemail.smtpserver zeus.spd.analog.com
 git remote add upstream https://github.com/torvalds/linux
 git fetch upstream
