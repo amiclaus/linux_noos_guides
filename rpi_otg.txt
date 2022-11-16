@@ -17,3 +17,5 @@ systemctl status iiod.service
 umount /sys/kernel/config/
 
 /usr/sbin/iiod_setup_gadgetfs
+
+dtoverlay=rpi-ad7746,addr=0xXX
