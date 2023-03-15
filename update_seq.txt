@@ -24,7 +24,7 @@ export PATH=$PATH:/home/amiclaus/.local/bin
 sudo apt-get install libyaml-dev
 make dtbs_check DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/amplifiers/adi,ada4250.yaml
 OR
-make dt_bindings_check
+make dt_binding_check
 
 With flags:
 make DT_CHECKER_FLAGS=-m DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/frequency/adi,adrf6780.yaml dt_binding_check
