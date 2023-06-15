@@ -3,10 +3,18 @@ export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
 export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized"
 
-make adi_bcm2709_defconfig (2711 - rpi4)
-make dtbs
+make adi_bcm2709_defconfig
+or
+make adi_bcm2711_defconfig (for rpi4)
 
-make -j4 zImage
+Building the Kernel:
+make -j4 zImage modules dtbs
+sudo make modules_install
+sudo cp arch/arm/boot/dts/*.dtb /boot/
+sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
+sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
+sudo cp arch/arm/boot/zImage /boot/$KERNEL.img
+
 scp arch/arm/boot/zImage root@192.168.1.122:/boot/kernel7.img
 scp arch/arm/boot/dts/overlays/rpi-admv1014.dtbo  root@10.48.65.139:/boot/overlays
 
