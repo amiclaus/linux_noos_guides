@@ -1,7 +1,7 @@
 Host:
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
-export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized"
+Optional: (export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized")
 
 make adi_bcm2709_defconfig
 or
