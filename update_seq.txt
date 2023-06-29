@@ -3,9 +3,12 @@ export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
 Optional: (export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized")
 
+Kernel configuration:
 make adi_bcm2709_defconfig
-or
+OR
 make adi_bcm2711_defconfig (for rpi4)
+OR
+make adi_bcmrpi_defconfig (for rpi zero, zero W)
 
 Building the Kernel:
 make -j4
