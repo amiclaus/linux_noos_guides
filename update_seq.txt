@@ -9,7 +9,12 @@ make adi_bcm2711_defconfig (for rpi4)
 
 Building the Kernel:
 make -j4 zImage modules dtbs
+
+Install modules:
 sudo make modules_install
+OR (with path to rootfs)
+sudo make INSTALL_MOD_PATH=/media/amiclaus/rootfs/ modules_install
+
 sudo cp arch/arm/boot/dts/*.dtb /boot/
 sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
 sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
