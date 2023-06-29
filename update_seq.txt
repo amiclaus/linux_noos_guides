@@ -8,6 +8,8 @@ or
 make adi_bcm2711_defconfig (for rpi4)
 
 Building the Kernel:
+make -j4
+OR (explicit)
 make -j4 zImage modules dtbs
 
 Install modules:
