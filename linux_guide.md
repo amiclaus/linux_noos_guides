@@ -1,4 +1,4 @@
-Host:
+Host Environment Variables:
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
 Optional: (export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized")
