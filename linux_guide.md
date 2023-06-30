@@ -50,6 +50,9 @@ or
 or  
 **with flags**: `make DT_CHECKER_FLAGS=-m DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/frequency/adi,adrf6780.yaml dt_binding_check`
 
+### Overlays
+with parameters: `dtoverlay=rpi-ad7746,addr=0xXX`
+
 ### How to copy image:
 `sudo dd if=/dev/sde of=/dev/sdf bs=4M status=progress`  
 or  
