@@ -43,7 +43,7 @@ with scp:
 `pip3 install git+https://github.com/devicetree-org/dt-schema.git@master`  
 `export PATH=$PATH:/home/amiclaus/.local/bin`  
 `sudo apt-get install libyaml-dev`  
-#### dt-bindings check:
+### dt-bindings check:
 `make dtbs_check DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/amplifiers/adi,ada4250.yaml`  
 or  
 `make dt_binding_check`  
