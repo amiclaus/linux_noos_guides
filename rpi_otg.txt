@@ -1,12 +1,4 @@
 nmap -sn 10.42.0.1/24
-make -j4 zImage modules dtbs
-
-sudo cp arch/arm/boot/dts/*.dtb /boot/
-sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
-sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
-sudo cp arch/arm/boot/zImage /boot/kernel.img
-
-sudo make modules_install INSTALL_MOD_PATH=/media/amiclaus/rootfs/
 
 cd /sys/module/g_ether/parameters
 
