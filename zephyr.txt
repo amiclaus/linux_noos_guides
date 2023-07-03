@@ -1,9 +1,0 @@
-Guide:
-https://docs.zephyrproject.org/latest/develop/getting_started/index.html
-
-west build -b nucleo_f446re samples/hello_world
-
-west -v build -p always -c -b nucleo_f446re samples/sensor/adt7420/
-
-menuconfig:
-west build -t menuconfig
