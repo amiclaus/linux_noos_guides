@@ -1,6 +1,11 @@
 ### Host Environment Variables:
+#### ARM
 `export ARCH=arm`  
 `export CROSS_COMPILE=arm-linux-gnueabihf-`  
+
+#### ARM64
+`export ARCH=arm64`  
+`export CROSS_COMPILE=aarch64-linux-gnu-`  
 
 Optional: `export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized"`
 
