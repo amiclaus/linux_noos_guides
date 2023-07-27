@@ -1,4 +1,4 @@
-### Configule Email:
+### Configure Email:
 `git config --global sendemail.smtp-encryption tls`  
 `git config --global sendemail.smtpserver zeus.spd.analog.com`  
 
