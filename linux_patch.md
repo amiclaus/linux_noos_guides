@@ -2,6 +2,9 @@
 `git config --global sendemail.smtp-encryption tls`  
 `git config --global sendemail.smtpserver zeus.spd.analog.com`  
 
+### Outlook Email format:
+`https://elinux.org/Mail_client_tips`  
+
 ### Configure Upstream Tree:
 `git remote add upstream https://github.com/torvalds/linux`  
 `git fetch upstream`  
