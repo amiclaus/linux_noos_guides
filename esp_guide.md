@@ -20,4 +20,4 @@ Full Documentation at: `https://docs.espressif.com/projects/esp-at/en/latest/esp
                            -> (Top) -> Component config -> AT -> Disable [ ] AT blufi command support.  
                            -> (Top) -> Component config -> AT -> Disable [ ] AT bt command support.  
 5. `./build.py build`  
-6. `./build.py -p /dev/ttyACM0 flash`  
+6. `./build.py -p (PORT) flash` (replace PORT with your serial port name, for example `/dev/ttyACM0`)  
