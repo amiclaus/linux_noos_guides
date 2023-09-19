@@ -32,6 +32,8 @@ with path to rootfs: `sudo make INSTALL_MOD_PATH=/media/amiclaus/rootfs/ modules
 `sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/`  
 `sudo cp arch/arm/boot/zImage /boot/$KERNEL.img`  
 
+Replace `$KERNEL.img` with `kernel7.img` for Pi 2/3, `kernel7l.img` for Pi 4, `kernel.img` for Pi Zero/Pi Zero 2.
+
 with scp:
 `scp arch/arm/boot/zImage root@192.168.1.122:/boot/kernel7.img` 
 `scp arch/arm/boot/dts/overlays/rpi-admv1014.dtbo  root@10.48.65.139:/boot/overlays`
