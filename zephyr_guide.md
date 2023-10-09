@@ -8,3 +8,6 @@
 
 ### Check Output
 `sudo picocom -b 115200 /dev/ttyACM0`  
+
+### Update Zephyr SDK Env
+`export ZEPHYR_TOOLCHAIN_VARIANT=zephyr`  
