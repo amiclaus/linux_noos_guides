@@ -3,6 +3,9 @@
 `export ARCH=arm`  
 `export CROSS_COMPILE=arm-linux-gnueabihf-`  
 
+One line example:  
+`export CROSS_COMPILE=arm-linux-gnueabihf- ARCH=arm`  
+
 #### ARM64
 `export ARCH=arm64`  
 `export CROSS_COMPILE=aarch64-linux-gnu-`  
