@@ -50,7 +50,10 @@ with scp:
 `scripts/checkpatch.pl --git HEAD --ignore FILE_PATH_CHANGES --ignore LONG_LINE --ignore LONG_LINE_STRING --ignore LONG_LINE_COMMENT --strict`
 
 ### Device Tree Bindings:
-`pip3 install git+https://github.com/devicetree-org/dt-schema.git@master`  
+`pip3 install git+https://github.com/devicetree-org/dt-schema.git@master` 
+or
+`pip3 install dtschema` (preferred)  
+
 `export PATH=$PATH:/home/amiclaus/.local/bin`  
 `sudo apt-get install libyaml-dev`  
 ### dt-bindings check:
