@@ -54,8 +54,11 @@ with scp:
 or  
 `pip3 install dtschema` (preferred)  
 
-`export PATH=$PATH:/home/amiclaus/.local/bin`  
+Additional packages:  
+`pip3 install jsonschema yamllint`  
 `sudo apt-get install libyaml-dev`  
+Export Path:  
+`export PATH=$PATH:/home/amiclaus/.local/bin`  
 ### dt-bindings check:
 `make dtbs_check DT_SCHEMA_FILES=Documentation/devicetree/bindings/iio/amplifiers/adi,ada4250.yaml`  
 or  
