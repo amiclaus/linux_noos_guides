@@ -6,6 +6,11 @@
 `west -v build -p always -c -b nucleo_f413zh samples/sensor/adt7420/`  
 `west flash`  
 
+Flash with jlink:  
+`west flash --runner jlink` 
+
+Flash with custom openocd:  
+`west flash --openocd-search ~/MaximSDK/Tools/OpenOCD/scripts/ --openocd ~/MaximSDK/Tools/OpenOCD/openocd`  
 ### Check Output
 `sudo picocom -b 115200 /dev/ttyACM0`  
 
