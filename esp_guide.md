@@ -29,7 +29,13 @@ Full Documentation at: https://docs.espressif.com/projects/esp-at/en/latest/esp3
 
 ### Flash Firmware Release
 
-`wget https://github.com/amiclaus/linux_noos_guides/releases/download/release/ESP32-WROOM-32-AT-NINA-W102.zip`  
-
 Documentation on how to flash:  
 https://docs.espressif.com/projects/esp-at/en/latest/esp32/Get_Started/Downloading_guide.html#linux-or-macos  
+
+Steps:  
+`pip install esptool==4.3` (latest version should work also)  
+`wget https://github.com/amiclaus/linux_noos_guides/releases/download/release/ESP32-WROOM-32-AT-NINA-W102.zip`  
+`unzip ESP32-WROOM-32-AT-NINA-W102.zip -d  "$(basename -s .zip ESP32-WROOM-32-AT-NINA-W102.zip)"`  
+`cd ESP32-WROOM-32-AT-NINA-W102`  
+`esptool.py --chip auto --port PORTNAME --baud 115200 --before default_reset --after hard_reset write_flash -z download.config`  
+(Replace `download.config` with the content inside the file found in ESP32-WROOM-32-AT-NINA-W102 folder)  
