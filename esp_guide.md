@@ -1,15 +1,15 @@
 #### ESP-AT Documentation:
-`https://docs.espressif.com/projects/esp-at/en/latest/esp32/`  
+https://docs.espressif.com/projects/esp-at/en/latest/esp32/  
 #### ESP-AT How to Compile:
-`https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html`  
+https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html  
 #### ESP-IDF Documentation:
-`https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html`  
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html  
 #### ESP-AT Version:
 `git clone -b v2.4.0.0 --recursive https://github.com/espressif/esp-at.git`  
 
 ### Custom Flash Guide
 
-Full Documentation at: `https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html`  
+Full Documentation at: https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html  
 
 1. Clone ESP-AT v2.4.0.0: `git clone -b v2.4.0.0 --recursive https://github.com/espressif/esp-at.git`  
 2. Change to the repository directory: `cd esp-at`  
@@ -21,7 +21,7 @@ Full Documentation at: `https://docs.espressif.com/projects/esp-at/en/latest/esp
    -> (Top) -> Component config -> AT -> Disable [ ] AT blufi command support.  
    -> (Top) -> Component config -> AT -> Disable [ ] AT bt command support.  
 6. Modify AT Command Port Pins to UART0  
-   (`https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_set_AT_port_pin.html#modify-command-port-pins`)  
+   (https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_set_AT_port_pin.html#modify-command-port-pins)  
    -> Edit `components/customized_partitions/raw_data/factory_param/factory_param_data.csv`  
    -> Set PLATFORM_ESP32 WROOM-32 `uart_port: 0`, `uart_tx_pin: 22`, `uart_rx_pin: 23`, `uart_cts_pin: -1`, `uart_rts_pin: -1`  
 8. `./build.py build`  
