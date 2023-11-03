@@ -26,3 +26,10 @@ Full Documentation at: `https://docs.espressif.com/projects/esp-at/en/latest/esp
    -> Set PLATFORM_ESP32 WROOM-32 `uart_port: 0`, `uart_tx_pin: 22`, `uart_rx_pin: 23`, `uart_cts_pin: -1`, `uart_rts_pin: -1`  
 8. `./build.py build`  
 9. `./build.py -p (PORT) flash` (replace PORT with your serial port name, for example `/dev/ttyACM0`)  
+
+### Flash Firmware Release
+
+`wget https://github.com/amiclaus/linux_noos_guides/releases/download/release/ESP32-WROOM-32-AT-NINA-W102.zip`  
+
+Documentation on how to flash:  
+https://docs.espressif.com/projects/esp-at/en/latest/esp32/Get_Started/Downloading_guide.html#linux-or-macos  
