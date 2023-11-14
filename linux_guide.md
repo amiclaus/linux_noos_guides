@@ -75,3 +75,6 @@ or
 `lsblk`  
 `sudo fdisk -l /dev/sde`  
 `sudo dd if=/dev/sdf of=/media/amiclaus/799D2070502D4D79/adrv9009zu11eg_fmcbridge_prod_test_2022.img bs=512 count=22618130 status=progress`  
+
+### Miscellaneous Stuff:
+Set IP for network interface: `sudo ifconfig enx00e04c680465 192.168.56.5/24`  
