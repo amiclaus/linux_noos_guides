@@ -23,7 +23,7 @@ Full Documentation at: https://docs.espressif.com/projects/esp-at/en/latest/esp3
 6. Modify AT Command Port Pins to UART0  
    (https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_set_AT_port_pin.html#modify-command-port-pins)  
    -> Edit `components/customized_partitions/raw_data/factory_param/factory_param_data.csv`  
-   -> Set PLATFORM_ESP32 WROOM-32 `uart_port: 0`, `uart_tx_pin: 22`, `uart_rx_pin: 23`, `uart_cts_pin: -1`, `uart_rts_pin: -1`  
+   -> Set PLATFORM_ESP32 WROOM-32 `uart_port: 0`, `uart_tx_pin: 1`, `uart_rx_pin: 3`, `uart_cts_pin: -1`, `uart_rts_pin: -1`  
 8. `./build.py build`  
 9. `./build.py -p (PORT) flash` (replace PORT with your serial port name, for example `/dev/ttyACM0`)  
 
