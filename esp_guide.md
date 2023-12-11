@@ -43,3 +43,8 @@ Steps:
 #### Auxiliary hex file for entering boot mode
 
 `wget https://github.com/amiclaus/linux_noos_guides/releases/download/release/flash_nina.hex`  
+
+#### Test AT command support
+
+Connect via serial port to the device and test the AT command support (baud rate 115200, CR+LF termination)
+`https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#at-test-at-startup`  
