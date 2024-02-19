@@ -24,4 +24,4 @@ with cover letter: `git format-patch --cover-letter HEAD~2 -o iio-adrf6780`
 ### Send Patches:
 `git send-email --to=antoniu.miclaus@analog.com --cc=antoniu.miclaus@analog.com 0001-regmap-add-support-for-7-17-register-formating.patch`  
 or  
-with script: `git send-email --cc-cmd='./scripts/get_maintainer.pl --norolestats 000*' 0001-regmap-add-support-for-7-17-register-formating.patch`  
+with script: `git send-email --to-cmd='./scripts/get_maintainer.pl --norolestats 000*' 0001-regmap-add-support-for-7-17-register-formating.patch`  
