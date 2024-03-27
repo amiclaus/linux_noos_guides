@@ -6,6 +6,9 @@
 `west -v build -p always -c -b nucleo_f413zh samples/sensor/adt7420/`  
 `west flash`  
 
+#### Build with flags
+`west build -p always -b adin6310_ethernet_switch samples/application_development/adin6310_eth_config/ -DLIB_ADIN6310_PATH=/home/amiclaus/Downloads/adinx310_tsn_driver_library_rel3.0.0/ADINx310_TSN_Driver_Library_Rel3.0.0`  
+
 Flash with jlink:  
 `west flash --runner jlink` 
 
