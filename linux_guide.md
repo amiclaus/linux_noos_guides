@@ -17,7 +17,11 @@ Optional: `export KCFLAGS="$KCFLAGS -Wmaybe-uninitialized"`
 or   
 `make adi_bcm2711_defconfig` (for rpi4)  
 or  
-`make adi_bcmrpi_defconfig` (for rpi zero, zero W)
+`make adi_bcmrpi_defconfig` (for rpi zero, zero W)  
+or  
+`make zynq_xcomm_adv7511_defconfig` (for Zynq)  
+or  
+`make adi_zynqmp_defconfig ` (for ZynqMP)  
 
 ### Building the Kernel:
 `make -j4`  
