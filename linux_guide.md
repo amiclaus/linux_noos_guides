@@ -25,7 +25,7 @@ or
 `make -j4 zImage modules dtbs` (for rpi)  
 or  
 `make -j4 UIMAGE_LOADADDR=0x8000 uImage` (for Zynq)  
-or
+or  
 `make -j4 Image UIMAGE_LOADADDR=0x8000` (for ZynqMP)  
 
 ### Install modules:
