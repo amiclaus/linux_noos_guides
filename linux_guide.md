@@ -38,10 +38,10 @@ or
 with path to rootfs: `sudo make INSTALL_MOD_PATH=/media/amiclaus/rootfs/ modules_install`
 
 ### Copy the outputs
-`sudo cp arch/arm/boot/dts/*.dtb /boot/`  
-`sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/`  
-`sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/`  
-`sudo cp arch/arm/boot/zImage /boot/$KERNEL.img`  
+`sudo cp arch/arm/boot/dts/*.dtb /media/amiclaus/BOOT/`  
+`sudo cp arch/arm/boot/dts/overlays/*.dtb* /media/amiclaus/BOOT/overlays/`  
+`sudo cp arch/arm/boot/dts/overlays/README /media/amiclaus/BOOT/overlays/`  
+`sudo cp arch/arm/boot/zImage /media/amiclaus/BOOT/$KERNEL.img`  
 
 Replace `$KERNEL.img` with `kernel7.img` for Pi 2/3, `kernel7l.img` for Pi 4, `kernel.img` for Pi Zero/Pi Zero 2.
 
