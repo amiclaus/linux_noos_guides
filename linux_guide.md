@@ -55,7 +55,10 @@ with scp:
 `ls -l /media/boot`  
 
 ### Checkpatch:
-`scripts/checkpatch.pl --git HEAD --ignore FILE_PATH_CHANGES --ignore LONG_LINE --ignore LONG_LINE_STRING --ignore LONG_LINE_COMMENT --strict`
+`scripts/checkpatch.pl --git HEAD --ignore FILE_PATH_CHANGES --ignore LONG_LINE --ignore LONG_LINE_STRING --ignore LONG_LINE_COMMENT --strict`  
+
+Macro argument reuse ignore:  
+`scripts/checkpatch.pl --git HEAD --ignore FILE_PATH_CHANGES --ignore LONG_LINE --ignore LONG_LINE_STRING --ignore LONG_LINE_COMMENT --ignore MACRO_ARG_REUSE --strict`  
 
 ### Device Tree Bindings:
 `pip3 install git+https://github.com/devicetree-org/dt-schema.git@master`  
