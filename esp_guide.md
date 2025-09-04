@@ -40,7 +40,7 @@ Steps:
 `esptool.py --chip auto --port PORTNAME --baud 115200 --before default_reset --after hard_reset write_flash -z download.config`  
 (Replace `download.config` with the content inside the file found in ESP32-WROOM-32-AT-NINA-W102 folder)  
 
-#### Auxiliary hex file for entering boot mode
+#### Auxiliary hex file for entering boot mode (MANDATORY for APARD board setup!!!)
 
 `wget https://github.com/amiclaus/linux_noos_guides/releases/download/release/flash_nina.hex`  
 
