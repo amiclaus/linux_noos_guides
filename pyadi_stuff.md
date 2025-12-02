@@ -1,3 +1,5 @@
+#### Pip force break system restrictions
+`pip3 install --break-system-packages <my_pkg>`  
 #### Environment Variables:
 `export PYTHONPATH=/usr/lib/python3.9/site-packages/:$PYTHONPATH`  
 #### Testing:
