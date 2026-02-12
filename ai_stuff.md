@@ -1,2 +1,2 @@
-**Workaround:**  
-rm  ~/.claude/statsig/statsig.cached.evaluations.*  
+**Workaround:**
+`rm  ~/.claude/statsig/statsig.cached.evaluations.*`
