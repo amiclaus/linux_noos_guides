@@ -31,4 +31,4 @@ with script: `git send-email --to-cmd='./scripts/get_maintainer.pl --norolestats
 or  
 with thread: `git send-email --thread 000*`  
 or  
-with exclusion `git send-email --thread --to="$(./scripts/get_maintainer.pl --norolestats iio-ad4880/v6-000* | grep -v '<FAVORITE NAME>' | paste -sd,)" iio-ad4880/v6-000*`  
+with exclusion `git send-email --to="$(./scripts/get_maintainer.pl --norolestats iio-ad4880/v6-000* | grep -v '<FAVORITE NAME>' | paste -sd,)" iio-ad4880/v6-000*`  
