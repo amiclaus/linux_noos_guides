@@ -30,3 +30,5 @@ or
 with script: `git send-email --to-cmd='./scripts/get_maintainer.pl --norolestats 000*' 0001-regmap-add-support-for-7-17-register-formating.patch`  
 or  
 with thread: `git send-email --thread 000*`  
+or  
+with exclusion `git send-email --thread --to="$(./scripts/get_maintainer.pl --norolestats iio-ad4880/v6-000* | grep -v '<FAVORITE NAME>' | paste -sd,)" iio-ad4880/v6-000*`  
