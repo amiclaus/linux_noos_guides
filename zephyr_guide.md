@@ -9,6 +9,9 @@
 #### Build with flags
 `west build -p always -b adin6310_ethernet_switch samples/application_development/adin6310_eth_config/ -DLIB_ADIN6310_PATH=/home/amiclaus/Downloads/adinx310_tsn_driver_library_rel3.0.0/ADINx310_TSN_Driver_Library_Rel3.0.0`  
 
+#### Build with custom openocd path
+`west -v build -p always --pristine -c -b adi_sdp_k1 samples/drivers/misc/adgm3121/ -DOPENOCD=/usr/local/bin/openocd`  
+
 Flash with jlink:  
 `west flash --runner jlink` 
 
